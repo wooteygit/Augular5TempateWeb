@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "my-new-project"
+    "name": "Augular5TempateWeb"
   },
   "apps": [
     {
@@ -21,7 +21,13 @@
       "styles": [
         "styles.scss"
       ],
-      "scripts": [],
+      "scripts": [
+        "assets/js/jquery.min.js",
+        "assets/js/tether.min.js",
+        "assets/js/bootstrap.min.js",
+        "assets/js/material.min.js",
+        "assets/js/autosize.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

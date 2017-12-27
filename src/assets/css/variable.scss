@@ -1,0 +1,258 @@
+//colors
+$color_red_orange_approx: #f44336;
+$color_apple_approx: #4caf50;
+$color_cerulean_approx: #03a9f4;
+$color_flamingo_approx: #ff5722;
+$color_roman_coffee_approx: #795548;
+$color_golden_fizz_approx: #ffeb3b;
+$color_storm_dust_approx: #616161;
+$color_lochmara_approx: #0288d1;
+$color_persian_red_approx: #d32f2f;
+$color_chilean_fire_approx: #f57c00;
+$color_mine_shaft_approx: #333;
+$black_54: rgba(0, 0, 0, 0.54);
+$black_14: rgba(0, 0, 0, 0.14);
+$black_26: rgba(0, 0, 0, 0.26);
+$white_100: rgba(255, 255, 255, 1);
+$white_30: rgba(255, 255, 255, 0.3);
+$black_12: rgba(0, 0, 0, 0.12);
+$color_bon_jour_approx: #e2e2e2;
+
+//fonts
+$font_0: Material Icons;
+
+//urls
+$url_0: url(/assets/fonts/MaterialIcons-Regular.woff2);
+$url_1: url(/assets/fonts/MaterialIcons-Regular.woff);
+$url_2: url(/assets/fonts/MaterialIcons-Regular.svg);
+$url_3: url(/assets/fonts/MaterialIcons-Regular.ttf);
+
+//@extend-elements
+//original selectors
+//.table >tbody:first-child >tr:first-child td, .table >tbody:first-child >tr:first-child th, .table >tfoot:first-child >tr:first-child td, .table >tfoot:first-child >tr:first-child th, .table >thead:first-child >tr:first-child td, .table >thead:first-child >tr:first-child th
+%extend_1 {
+	font-weight: bold;
+	color: $color_mine_shaft_approx;
+	height: auto;
+}
+
+
+button {
+	outline: 0 !important;
+}
+a {
+	cursor: pointer;
+}
+.flex {
+	flex: 1;
+}
+.flex-1 {
+	flex: 1;
+	width: 0;
+}
+.flex-2 {
+	flex: 2;
+	width: 0;
+}
+.flex-3 {
+	flex: 3;
+	width: 0;
+}
+.flex-4 {
+	flex: 4;
+	width: 0;
+}
+.v-center {
+	align-items: center;
+}
+.h-center {
+	justify-content: center;
+}
+.width-md {
+	max-width: 960px;
+}
+.bg-red {
+	background-color: $color_red_orange_approx;
+}
+.bg-green {
+	background-color: $color_apple_approx;
+}
+.bg-blue {
+	background-color: $color_cerulean_approx;
+}
+.bg-orange {
+	background-color: $color_flamingo_approx;
+}
+.bg-brown {
+	background-color: $color_roman_coffee_approx;
+}
+.bg-yellow {
+	background-color: $color_golden_fizz_approx;
+}
+.bg-dark-grey {
+	background-color: $color_storm_dust_approx;
+}
+.bg-dark-blue {
+	background-color: $color_lochmara_approx;
+}
+.bg-dark-red {
+	background-color: $color_persian_red_approx;
+}
+.bg-dark-orange {
+	background-color: $color_chilean_fire_approx;
+}
+.bg-transparent {
+	background-color: transparent !important;
+}
+.color-black {
+	color: $color_mine_shaft_approx !important;
+}
+.color-red {
+	color: $color_red_orange_approx !important;
+}
+.color-green {
+	color: $color_apple_approx !important;
+}
+.color-orange {
+	color: $color_flamingo_approx !important;
+}
+.color-blue {
+	color: $color_cerulean_approx !important;
+}
+.color-alpha-grey {
+	color: $black_54;
+}
+.shadow-border {
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 1px 4px 0 $black_14;
+	z-index: 1;
+}
+@font-face {
+	font-family: $font_0;
+	font-style: normal;
+	font-weight: 400;
+	src: local('Material Icons'), local('MaterialIcons-Regular'), $url_0 format('woff2'), $url_1 format('woff'), $url_2 format('svg'), $url_3 format('truetype');
+}
+.material-icons {
+	&.md-18 {
+		font-size: 18px;
+	}
+	&.md-24 {
+		font-size: 24px;
+	}
+	&.md-32 {
+		font-size: 32px;
+	}
+	&.md-36 {
+		font-size: 36px;
+	}
+	&.md-48 {
+		font-size: 48px;
+	}
+	&.md-dark {
+		color: $black_54;
+		&.md-inactive {
+			color: $black_26;
+		}
+	}
+	&.md-light {
+		color: $white_100;
+		&.md-inactive {
+			color: $white_30;
+		}
+	}
+}
+.p-relative {
+	position: relative !important;
+}
+.p-absolute {
+	position: absolute !important;
+}
+.v-scroll {
+	overflow-y: auto;
+}
+.btn-icon-text {
+	position: relative;
+	padding-left: 45px !important;
+	.material-icons {
+		font-size: 20px;
+		position: absolute;
+		top: 50%;
+		margin-top: -5px;
+		left: 15px;
+	}
+}
+.fill-dock {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+}
+.box-border {
+	border: solid 1px $color_bon_jour_approx;
+}
+.tp-line {
+	border-top: 1px solid $black_12;
+}
+.bt-line {
+	border-bottom: 1px solid $black_12;
+}
+.attached-width {
+	margin-left: -1.5rem !important;
+	margin-right: -1.5rem !important;
+}
+.table {
+	> tbody:first-child > tr:first-child {
+		td {
+			@extend %extend_1;
+		}
+		th {
+			@extend %extend_1;
+		}
+	}
+	> tfoot:first-child > tr:first-child {
+		td {
+			@extend %extend_1;
+		}
+		th {
+			@extend %extend_1;
+		}
+	}
+	> thead:first-child > tr:first-child {
+		td {
+			@extend %extend_1;
+		}
+		th {
+			@extend %extend_1;
+		}
+	}
+}
+[hidden] {
+	display: none !important;
+}
+.d-flex {
+	display: flex;
+}
+.pointer {
+	cursor: pointer !important;
+}
+input[type=number]::-webkit-inner-spin-button {
+	margin: 0;
+}
+input[type=number]::-webkit-outer-spin-button {
+	margin: 0;
+}
+.form-control.border {
+	border: 1px solid $black_12 !important;
+}
+.btn .material-icons {
+	font-size: 1.2rem !important;
+	line-height: .8rem !important;
+	&.ml {
+		margin-left: .5rem !important;
+	}
+	&.mr {
+		margin-right: .5rem !important;
+	}
+}

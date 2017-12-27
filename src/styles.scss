@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+a.main-menu {
+  font-size: 1rem;
+  &.active, &:active {
+    background-color: #424242;
+  }
+}
+
+.account-menu {
+  border-bottom: solid 1px #555;
+}
+
+.user-pic {
+  width: 56px;
+  height: 56px;
+  background: #333;
+}
